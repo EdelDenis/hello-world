@@ -8,25 +8,22 @@
     
     
     
-    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    
     <script>
-     $("h1").text("Привет!");
-     let friends = ["Илья", "Миша"];
-     for (let i=0; i<friends.length; i++){
-       $("body").append("<p>" + friends[i] + "</p>");
-     }
-    $("h1").text("Мои друзья: ");
+    let cinema = prompt("Сколько Вам лет?");
+    if (cinema>=12) {
+      alert("Вы можете пойти в кино!");
+    } else {
+      let sattelite = confirm("У вас есть спутник старше 18 лет?");
+      if (sattelite) {
+        alert("Вы можете пойти в кино!");
+      } else {
+        alert("Вы не можете пойти в кино!");
+      }
+    }
+
+
     
-    $("p").append(" - лучший!");
-
-    $("body").append("<p>Привеет</p>");
-    $("p").fadeOut(1000).delay(5000).fadeIn(1000);
-
-    for(let i=0; i<5; i++){
-    $("h1").fadeTo(1000,0.5).fadeTo(1000,1);
-    };
-    
-
 
     </script>
   </body>
